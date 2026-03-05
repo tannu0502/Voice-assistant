@@ -53,7 +53,7 @@ def sendEmail(to, content):
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()  # Start TLS encryption
-        server.login('misstannu0805@gmail.com', 'tannu@123')  # Use environment variables for security
+        server.login('misstannu0805@gmail.com', 'xyz@123')  # Use environment variables for security
         server.sendmail('misstannu0805@gmail.com', to, content)
         server.close()
         speak("Email has been sent.")
